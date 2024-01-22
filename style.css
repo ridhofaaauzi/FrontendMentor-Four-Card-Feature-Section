@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 89%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+main {
+  padding: 50px 0;
+}
+
+h1,
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  margin: 10px 0 30px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+}
+
+main .header {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+main .header span {
+  display: block;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+main .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .features .col {
+  width: calc(94% / 3);
+}
+
+main .features .card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 10px 10px #ddd;
+}
+
+main .features .card.cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+main .features .card.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  margin-bottom: 1rem;
+}
+
+main .features .card.orange {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+main .features .card.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 60px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  main .header {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  main .features {
+    display: block;
+  }
+
+  main .features .col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
